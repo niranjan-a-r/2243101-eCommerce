@@ -1,0 +1,98 @@
+body {
+    background-color: #D4F1F4;
+    height: 90vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.back-button {
+    height: 40px;
+    width: auto;
+    margin: 3px 3px;
+}
+
+.login-container {
+    background-color: #189AB4;
+    height: 450px;
+    width: 450px;
+    margin: 40px 530px;
+    position: absolute;
+    border: none;
+    border-radius: 45px;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 28px rgba(0,0,0,0.25), 0px 10px 10px rgba(0,0,0,0.25);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h1-container {
+    margin-top: -11px;
+    margin-bottom: 26px;
+}
+
+h1 {
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+form {
+    position: relative;
+    z-index: 1;
+    background: none;
+    max-width: 360px;
+    margin: 0 auto 100px 0;
+    padding: 15px;
+    text-align: center;
+}
+
+form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 5px 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background-color: #05445E;
+    width: 30%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-weight: 200;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+
+button:hover {
+    background-color: #75E6DA;
+    color: black;
+    box-shadow: 0px 10px 28px rgba(0,0,0,0.25), 0px 10px 10px rgba(0,0,0,0.25);
+}
+
+form .message {
+    margin: 15px 0 0;
+    color: #D4F1F4;
+    font-size: 16px;
+}
+
+form .message a {
+    color: #05445E;
+    text-decoration: none;
+}
+
+form .message a:hover {
+    font-weight: bold;
+}

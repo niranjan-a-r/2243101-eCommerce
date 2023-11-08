@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="back-button" src="./Images/back-button.png" alt="back-button"></a>
+    </header>
+    <main>
+        <div class="login-container">
+            <div class="h1-container">
+                <h1>Log in</h1>
+            </div>
+            <form name="loginform">
+                <input type="text" name="username" placeholder="Enter username" onblur="usernameValidation()">
+                <input type="password" name="password" placeholder="Enter password" onblur="passwordValidation()">
+                <input type="email" name="email" placeholder="Enter Email ID" onblur="emailValidation()">
+                <button type="submit">Login</button>
+                <p class="message">Don't have an account?<a href="#"> Sign Up</a></p>
+            </form>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

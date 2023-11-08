@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Womens Watch Collection</title>
+    <link rel="stylesheet" href="mens-page.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        font-family: "Poppins", sans-serif;
+        }
+
+        .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        }
+
+        .logo {
+            font-family: 'Ballet', cursive;
+            font-size: 25px;
+            font-weight: bold;
+            left: 60%;
+        }
+
+        .watch {
+        background-color: black;
+        color: white;
+        height: 100vh; 
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid white;
+        }
+
+        #watch {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .watch-info {
+            position: relative;
+            bottom: -200px; 
+            left: -500px; 
+            height: 30%;
+            width: 30%;
+            padding: 10px;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-size: 45px;
+            font-weight: 650;
+            background-color: rgba(255, 255, 255, 0);
+            border: none;
+            border-radius: 1px;
+        }
+    </style>
+    <script>
+        let prevScrollPos = window.pageYOffset;
+
+        window.onscroll = function() {
+            const currentScrollPos = window.pageYOffset;
+            if (prevScrollPos > currentScrollPos) {
+                document.querySelector('.navbar').style.top = '0';
+            } else {
+                document.querySelector('.navbar').style.top = '-100px'; 
+            }
+            prevScrollPos = currentScrollPos;
+        };
+
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+              <div class="container-1 nav-container">
+                  <input class="checkbox" type="checkbox" name="" id="" />
+                  <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                  </div>  
+                  <div class="logo">
+                    Hayden Watches
+                </div>
+                <div class="menu-items">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="mens-page.html">Men's</a></li>
+                  <li><a href="womens-page.html">Women's</a></li>
+                  <li><a href="#">Shop by Collection</a></li>
+                  <li><a href="#">About</a></li>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <div class="container">
+        <div class="watch" id="watch" style="background-image: url('Images/womens-watch1.jpeg');">
+            <div class="watch-info">
+                <p>Aura <br>Rs. 1,599</p>
+            </div>
+        </div>
+
+        <div class="watch" id="watch" style="background-image: url('Images/womens-watch2.jpeg');">
+            <div class="watch-info">
+                <p>Chronic Femme <br>Rs. 3,599</p>
+            </div>
+        </div>
+
+        <div class="watch" id="watch" style="background-image: url('Images/womens-watch3.jpeg');">
+            <div class="watch-info">
+                <p>Matte Silver <br>Rs. 2,799</p>
+            </div>
+        </div>
+    </div>
+    <section>
+        <br><br>
+        <table class="table-container">
+          <tr>
+            <th>Image</th>
+            <td><img src="Images/womens-watch1.jpeg" width="200"></td>
+            <td><img src="Images/womens-watch2.jpeg" width="200"></td>
+            <td><img src="Images/womens-watch3.jpeg" width="200"></td>
+          </tr>
+          <tr>
+            <th>Name</th>
+            <td>Aura</td>
+            <td>Chronic Femme</td>
+            <td>Matte Silver</td>
+          </tr>
+          <tr>
+            <th>Price</th>
+            <td>Rs. 1,599</td>
+            <td>Rs. 3,599</td>
+            <td>Rs. 2,799</td>
+          </tr>
+        </table>
+        <br><br>
+      </section>
+</body>
+</html>
