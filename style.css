@@ -157,6 +157,7 @@ body {
  
  #login-btn {
   background-color: white;
+  margin-top: 2px;
   border: black;
   box-shadow: 3px 3px 3px 0px;
   height: 40px;
